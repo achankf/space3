@@ -1,6 +1,13 @@
 #![recursion_limit = "512"]
 
+#[macro_use]
+extern crate lazy_static;
+#[macro_use]
+extern crate enumset;
+
 mod app;
+mod entity;
+mod galaxy;
 mod game;
 
 use wasm_bindgen::prelude::*;
